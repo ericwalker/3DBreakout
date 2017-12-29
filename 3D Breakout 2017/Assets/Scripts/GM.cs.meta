@@ -1,0 +1,26 @@
+fileFormatVersion: 2
+guid: cfc3acdbd61184b6097fa63616a09d3c
+timeCreated: 1508970399
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - livesText: {fileID: 114787799293639110, guid: 4693a922c4305411e83895abfaee8f64,
+      type: 2}
+  - gameOver: {fileID: 1487576070316026, guid: 4693a922c4305411e83895abfaee8f64, type: 2}
+  - youWin: {fileID: 1019526128145150, guid: 4693a922c4305411e83895abfaee8f64, type: 2}
+  - thanks: {fileID: 1455144712067960, guid: 4693a922c4305411e83895abfaee8f64, type: 2}
+  - bricksPrefab: {instanceID: 0}
+  - paddle: {fileID: 1844107644164692, guid: cb1e122c874e148f9a5849106481a075, type: 2}
+  - ballPrefab: {fileID: 1544098168765952, guid: d4d0693bd6dc248acad571d5c9217e88,
+      type: 2}
+  - deathParticles: {fileID: 1308064679179768, guid: c091753d70846466dacc2db799be1dea,
+      type: 2}
+  - ballParticles: {fileID: 1308064679179768, guid: bfc7fc37d61e74dd4866f3abc6f3b6e5,
+      type: 2}
+  - attachedBall: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

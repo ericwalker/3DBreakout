@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1943721610237074}
+  m_IsPrefabParent: 1
+--- !u!1 &1943721610237074
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4660505498403016}
+  - component: {fileID: 114452132945561532}
+  m_Layer: 0
+  m_Name: ItemDrop
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4660505498403016
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1943721610237074}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114452132945561532
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1943721610237074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb6f5653c7841486d99c76f7d1f111ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PowerupItemTable:
+  - name: Live
+    powerupItem: {fileID: 1129455779827736, guid: 431ec3b8dfcc842618d805cde1925d3a,
+      type: 2}
+    dropRarity: 5
+  - name: Fire Ball
+    powerupItem: {fileID: 1129455779827736, guid: 87be70e5234e249099a1504eff59c34a,
+      type: 2}
+    dropRarity: 10
+  - name: Strech Paddle
+    powerupItem: {fileID: 1129455779827736, guid: 86f365c67de0c484ab4fb1cf4a7446ca,
+      type: 2}
+    dropRarity: 20
+  - name: Clone
+    powerupItem: {fileID: 1129455779827736, guid: 56a700fecc33c48f793edbfadb1f0a14,
+      type: 2}
+    dropRarity: 20
+  - name: Coin
+    powerupItem: {fileID: 1924136224035516, guid: a3309f0fd01a94582b776fd45f9f4ae7,
+      type: 2}
+    dropRarity: 50
+  - name: Shrink Paddle
+    powerupItem: {fileID: 1129455779827736, guid: 243cb058a0a6e440bae95adb77e3752e,
+      type: 2}
+    dropRarity: 20
+  dropChance: 40
