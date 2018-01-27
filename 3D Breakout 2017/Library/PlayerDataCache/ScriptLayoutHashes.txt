@@ -222,7 +222,7 @@ afc52d27c3ec0bd47909e81bd45fbffa Assembly-CSharp.dll:TMPro.TMP_TextEventHandler
 cd0314575af269ff47bafee6448fb8c6 Assembly-CSharp.dll:.DropMotion
 0871574e0272beec2d005381e2b19cd1 Assembly-CSharp.dll:.Bricks
 020550babdb991365f61c5bffe1f4f52 Assembly-CSharp.dll:TMPro.Examples.TextMeshSpawner
+5be2989753fc8b74257694332bcab44d Assembly-CSharp.dll:.ClickSound
 af7666733efcc974926d7d470e1732a6 Assembly-CSharp.dll:TMPro.Examples.SkewTextExample
 34e025057ef78b1bf238460cdf6583a3 Assembly-CSharp.dll:TMPro.Examples.ObjectSpin
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:TMPro.Examples.SimpleScript
-5be2989753fc8b74257694332bcab44d Assembly-CSharp.dll:.ClickSound
