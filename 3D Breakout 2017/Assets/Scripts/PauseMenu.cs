@@ -23,12 +23,14 @@ public class PauseMenu : MonoBehaviour {
 			paused = !paused;
 		}
 
+		// if press the "Gear" icon, which is pause button
 		if (paused) { 
 			PauseUI.transform.localPosition = new Vector3(0, 0, 0);
 //			PauseUI.SetActive (true);
 			Time.timeScale = 0; // stop all of the motion in the game
 		}
 
+		// if press the Resume button
 		if (!paused) {
 			PauseUI.transform.localPosition = new Vector3(100, 0, 0);
 //			PauseUI.SetActive (false);
@@ -48,10 +50,10 @@ public class PauseMenu : MonoBehaviour {
 	}
 
 	public void Restart(){
-		GM.lives = 3;
-		GM.instance.ball_num = 0;
-		GM.instance.bricks = 21;
-		ScoreManager.score = 0;
+//		GM.lives = 3;
+//		GM.instance.ball_num = 0;
+//		GM.instance.bricks = 21;
+//		ScoreManager.score = 0;
 		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 	}
 

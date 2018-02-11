@@ -65,10 +65,14 @@ public class GM : MonoBehaviour {
 	public void Setup(){
 //		livesText.text = "Lives: " + lives;
 		// set the default information, including lives score
-		lives = 3;
-		ball_num = 0;
-		bricks = 35;
-		ScoreManager.score = 0;
+
+		if (SceneManager.GetActiveScene ().name == "Scene1") {
+			lives = 3;
+			ball_num = 0;
+//			bricks = 35;
+			ScoreManager.score = 0;
+		}
+
 
 		livesText.text = lives.ToString();
 

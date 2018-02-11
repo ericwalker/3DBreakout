@@ -20,7 +20,7 @@ public class ItemDropScript : MonoBehaviour {
 	public void CalculateItem(Vector3 brickPos){
 		int calc_dropChance = Random.Range (0, 101);
 		if (calc_dropChance > dropChance) {
-//			Debug.Log ("No item is dropping QQ");
+//			Debug.Log ("No item is dropping...");
 			return;
 		}
 
@@ -33,7 +33,7 @@ public class ItemDropScript : MonoBehaviour {
 //			Debug.Log ("ItemWeight: " + itemWeight); // 48 = 8+10+30
 			int randomValue = Random.Range (0, itemWeight); // 30
 
-			// judge to instantiate which powerup item
+			// judge which powerup item is going to be initiate
 			for (int j=0; j< itemWeight; j++){
 				if(randomValue <= PowerupItemTable[j].dropRarity){
 					Instantiate (PowerupItemTable[j].powerupItem,brickPos+PowerupItemTable[j].powerupItem.gameObject.transform.position,Quaternion.Euler(0, 0, 90));
