@@ -71,18 +71,18 @@ public class Ball : MonoBehaviour {
 
 		if (col.gameObject.name == "Paddle(Clone)") {
 //			Debug.Log ("paddle");
-			PlayBallSound (paddleHit);
+			FindObjectOfType<AudioManager>().Play("PaddleHit");
 		}
 
 //		if (col.gameObject.name == "Wall1" || col.gameObject.name == "Wall2" || col.gameObject.name == "Roof") {
 		if (col.gameObject.tag == "Wall") {
 //			Debug.Log ("wall");
-			PlayBallSound (wallHit);
+			FindObjectOfType<AudioManager>().Play("WallHit");
 		}
 
 		if (col.gameObject.tag == "Brick") {
 //			Debug.Log ("brickHit");
-			PlayBallSound (brickHit);
+			FindObjectOfType<AudioManager>().Play("BrickHit");
 		}
 
 //		if (col.gameObject.name == "Floor") {

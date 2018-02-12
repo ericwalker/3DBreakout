@@ -42,7 +42,7 @@ public class GM : MonoBehaviour {
 //		cloneBallList = new ArrayList();
 	}
 
-	// Use this for initialization
+	// to eusure there is only "one" GM
 	void Awake () {
 		if (instance == null){
 			instance = this;
@@ -99,18 +99,15 @@ public class GM : MonoBehaviour {
 
 			Debug.Log ("You win!");
 			youWin.SetActive(true);
-//			Time.timeScale = .25f;
-			PlayMusic (WinMusic);
+			FindObjectOfType<AudioManager>().Play("WinMusic");
 			Invoke ("NextLevel", 3f);
 		}
 
 		if (lives < 1)
 		{
 			gameOver.SetActive(true);
-//			Time.timeScale = .25f;
-			PlayMusic (LoseMusic);
 			Invoke ("Reset", 3f);
-		}
+		} 
 	}
 
 	void Reset(){
@@ -157,12 +154,14 @@ public class GM : MonoBehaviour {
 		Destroy(clonePaddle);
 		DestroyBall (); // when the paddle die, the ball also need to be destroyed
 
-//		Destroy (GameObject.FindWithTag("Powerup"));
-//		Destroy (GameObject.FindWithTag("Powerdown"));
 		DestroyAllPowerup("Powerup");
 		DestroyAllPowerup("Powerdown");
 
-		Invoke ("SetupPaddle", resetDeley);
+		// if the game is over, stop to setup the paddle
+		if (lives >= 1) {
+			Invoke ("SetupPaddle", resetDeley);
+		}
+
 		CheckGameOver();
 	}
 
@@ -202,21 +201,12 @@ public class GM : MonoBehaviour {
 		CheckGameOver();
 	}
 
-//	public void DestroyBall() // while get too much powerdownShrink
-//	{
-//		
-//		GameObject newexplosion = Instantiate (ballParticles, cloneBall.transform.position, Quaternion.identity);
-//		Destroy(newexplosion,1);
-//		Destroy(cloneBall);
-//	}
-
 	public void DestroyBall() // while get too much powerdownShrink, destroy all of the ball
 	{
 
 		for (int i = 0; i < cloneBallList.Count; i++) {
 			GameObject newexplosion = Instantiate (ballParticles, cloneBallList[i].transform.position, Quaternion.identity);
 			Destroy(newexplosion,1);
-
 
 			Destroy (cloneBallList [i]);
 		}
@@ -239,10 +229,5 @@ public class GM : MonoBehaviour {
 
 	public void RemoveCloneBall(GameObject newCloneBall){
 		cloneBallList.Remove(newCloneBall);
-	}
-
-
-	public void PlayMusic(AudioClip clip){
-		GetComponent<AudioSource> ().PlayOneShot (clip);
 	}
 }

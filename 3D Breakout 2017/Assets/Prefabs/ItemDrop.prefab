@@ -67,7 +67,7 @@ MonoBehaviour:
   - name: Clone
     powerupItem: {fileID: 1129455779827736, guid: 56a700fecc33c48f793edbfadb1f0a14,
       type: 2}
-    dropRarity: 20
+    dropRarity: 200
   - name: Coin
     powerupItem: {fileID: 1924136224035516, guid: a3309f0fd01a94582b776fd45f9f4ae7,
       type: 2}

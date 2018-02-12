@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class PauseMenuWithoutIcon : MonoBehaviour {
-
+	
 	public static bool GameIsPaused = false;
 
 	public GameObject pauseMenuUI;
@@ -12,9 +12,8 @@ public class PauseMenuWithoutIcon : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetKeyDown (KeyCode.Escape)) {
-
+			FindObjectOfType<AudioManager>().Play("ClickSound");
 //			GameIsPaused = !GameIsPaused;
-
 			if (GameIsPaused) {
 				Resume ();
 			}
@@ -22,9 +21,18 @@ public class PauseMenuWithoutIcon : MonoBehaviour {
 			else {
 				Pause ();
 			}
-
 		} 
+	}
 
+	// if press the pause button
+	public void Pause_Buttun(){
+		if (GameIsPaused) {
+			Resume ();
+		}
+
+		else {
+			Pause ();
+		}
 	}
 
 	public void Resume(){
@@ -40,10 +48,8 @@ public class PauseMenuWithoutIcon : MonoBehaviour {
 	}
 
 	public void Restart(){
-		//		GM.lives = 3;
-		//		GM.instance.ball_num = 0;
-		//		GM.instance.bricks = 21;
-		//		ScoreManager.score = 0;
+		Time.timeScale = 1f;
+		GameIsPaused = false;
 		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 	}
 
@@ -52,6 +58,9 @@ public class PauseMenuWithoutIcon : MonoBehaviour {
 	}
 
 	public void MainMenu(){
+		Time.timeScale = 1f;
+
+		GameIsPaused = false;
 		SceneManager.LoadScene("Menu");
 	}
 }

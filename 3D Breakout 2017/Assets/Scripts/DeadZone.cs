@@ -21,8 +21,11 @@ public class DeadZone : MonoBehaviour {
 
 			// play the missed sound
 			if (--GM.instance.ball_num == 0) {
-				col.gameObject.GetComponent<Ball> ().PlayBallSound (col.gameObject.GetComponent<Ball> ().missed);
-				StartCoroutine (TimerOfDead (col.gameObject)); // delay 1sec for playing missed sound
+//				col.gameObject.GetComponent<Ball> ().PlayBallSound (col.gameObject.GetComponent<Ball> ().missed);
+//				StartCoroutine (TimerOfDead (col.gameObject)); // delay 1sec for playing missed sound
+
+				Destroy (col.gameObject);
+				FindObjectOfType<AudioManager>().Play("PlayerDeath");
 				GM.instance.LoseLife ();
 			} else {
 				Destroy (col.gameObject);
@@ -30,6 +33,8 @@ public class DeadZone : MonoBehaviour {
 		}
 	}
 
+
+	// ** unused after adding AudioManager
 	// use to play the missed sound before detroy the ball
 	private IEnumerator TimerOfDead(GameObject ball){
 		yield return new WaitForSeconds (1.0f);
