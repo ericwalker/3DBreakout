@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement; // for scene managemant
 
 public class GM : MonoBehaviour {
 
-
 	public static int lives = 3;
 	public int ball_num = 0;
 	public int bricks = 21;
@@ -26,8 +25,6 @@ public class GM : MonoBehaviour {
 	public GameObject attachedBall = null; // used in Paddle.cs to let the ball go with the paddle while attaching on the paddle
 	public static GM instance = null; // GM.instance.brick_num
 
-	public AudioClip WinMusic;
-	public AudioClip LoseMusic;
 
 	private GameObject clonePaddle;
 	private GameObject [] _bricks; // use to untrigger the bricks
@@ -53,13 +50,6 @@ public class GM : MonoBehaviour {
 
 		Setup();
 	}
-
-	void Update(){
-//		if(attachedBall) {
-//			Rigidbody ballRigidbody = attachedBall.GetComponent<Rigidbody>();
-//			ballRigidbody.position = paddle.transform.position + new Vector3(0, 1f, 0);
-//		}
-	}
 		
 	// setup the game at the beginning
 	public void Setup(){
@@ -73,10 +63,8 @@ public class GM : MonoBehaviour {
 			ScoreManager.score = 0;
 		}
 
-
 		livesText.text = lives.ToString();
 
-//		clonePaddle = Instantiate (paddle, transform.position, Quaternion.identity) as GameObject;
 		Instantiate(bricksPrefab, transform.position, Quaternion.identity);
 //		SpawnBall ();
 		SetupPaddle();
@@ -95,7 +83,6 @@ public class GM : MonoBehaviour {
 			}
 
 			playerToInactive.SetActive (false);
-
 
 			Debug.Log ("You win!");
 			youWin.SetActive(true);

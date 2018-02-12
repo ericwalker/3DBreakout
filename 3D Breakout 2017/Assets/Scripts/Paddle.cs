@@ -9,9 +9,6 @@ public class Paddle : MonoBehaviour {
 	private Vector3 playerPos = new Vector3 (0, 0, 0);
 	private Touch touch;
 
-	public AudioClip CollectCoin;
-	public AudioClip CollectPowerupLive;
-
 	void Update () 
 	{
 		// let the ball follow the paddle
@@ -61,20 +58,21 @@ public class Paddle : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider col){
-		if (col.gameObject.name == "Coin(Clone)") {
-//			Debug.Log ("I have a coin.");
-			PlayPaddleSound (CollectCoin);
+
+		if (col.gameObject.tag == "Powerup") {
+
+
+			//	Debug.Log ("I have a coin.");
+			if (col.gameObject.name == "Coin(Clone)") {
+				FindObjectOfType<AudioManager>().Play("PickCoin");
+			}
+			else if (col.gameObject.name == "PowerupLive(Clone)") {
+				FindObjectOfType<AudioManager>().Play("PickPowerupLive");
+			} else {
+				FindObjectOfType<AudioManager>().Play("PickPowerup");
+			}
 		}
 
-		if (col.gameObject.name == "PowerupLive(Clone)") {
-			//			Debug.Log ("I have a coin.");
-			PlayPaddleSound (CollectPowerupLive);
-		}
-
-	}
-
-	public void PlayPaddleSound(AudioClip clip){
-		GetComponent<AudioSource> ().PlayOneShot (clip);
 	}
 
 }
