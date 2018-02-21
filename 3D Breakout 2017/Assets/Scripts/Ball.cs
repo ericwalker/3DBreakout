@@ -94,8 +94,7 @@ public class Ball : MonoBehaviour {
 	// when the fireball hit the bricks, play the sound effect
 	void OnTriggerEnter(Collider col){
 		if (col.gameObject.tag == "Brick") {
-			//			Debug.Log ("I have a coin.");
-			PlayBallSound (brickHitFireball);
+			FindObjectOfType<AudioManager> ().Play ("BrickOnFire");
 		}
 	}
 
@@ -111,9 +110,5 @@ public class Ball : MonoBehaviour {
 		rb.velocity = Vector3.ClampMagnitude (movement, ballInitialVelocity); // set the speed
 
 		//Debug.Log ("Ball speed: " + rb.velocity.magnitude);
-	}
-
-	public void PlayBallSound(AudioClip clip){
-		GetComponent<AudioSource> ().PlayOneShot (clip);
 	}
 }

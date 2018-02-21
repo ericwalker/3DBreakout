@@ -64,13 +64,14 @@ public class Paddle : MonoBehaviour {
 
 			//	Debug.Log ("I have a coin.");
 			if (col.gameObject.name == "Coin(Clone)") {
-				FindObjectOfType<AudioManager>().Play("PickCoin");
-			}
-			else if (col.gameObject.name == "PowerupLive(Clone)") {
-				FindObjectOfType<AudioManager>().Play("PickPowerupLive");
+				FindObjectOfType<AudioManager> ().Play ("PickCoin");
+			} else if (col.gameObject.name == "PowerupLive(Clone)") {
+				FindObjectOfType<AudioManager> ().Play ("PickPowerupLive");
 			} else {
-				FindObjectOfType<AudioManager>().Play("PickPowerup");
+				FindObjectOfType<AudioManager> ().Play ("PickPowerup");
 			}
+		} else if (col.gameObject.tag == "Powerdown") {
+			FindObjectOfType<AudioManager> ().Play ("PickPowerdown");
 		}
 
 	}

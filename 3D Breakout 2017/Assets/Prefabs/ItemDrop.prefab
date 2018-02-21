@@ -59,7 +59,7 @@ MonoBehaviour:
   - name: Fire Ball
     powerupItem: {fileID: 1129455779827736, guid: 87be70e5234e249099a1504eff59c34a,
       type: 2}
-    dropRarity: 10
+    dropRarity: 100
   - name: Strech Paddle
     powerupItem: {fileID: 1129455779827736, guid: 86f365c67de0c484ab4fb1cf4a7446ca,
       type: 2}
