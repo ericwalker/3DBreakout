@@ -5,19 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour {
 
+	public SceneFader sceneFader;
+	public string levelSceneName = "Scene1";
+
 	public void PlayGame(){
-//		StartCoroutine(DelaySceneLoad());
-		SceneManager.LoadScene (SceneManager.GetActiveScene().buildIndex + 1);
+		sceneFader.FadeTo(levelSceneName);
+//		SceneManager.LoadScene (SceneManager.GetActiveScene().buildIndex + 1);
 	}
 
 	public void QuitGame(){
 		Debug.Log ("QUIT!");
 		Application.Quit ();
 	}
-
-//	IEnumerator DelaySceneLoad()
-//	{
-//		yield return new WaitForSeconds(1.0f);
-//		SceneManager.LoadScene (SceneManager.GetActiveScene().buildIndex + 1);
-//	}
 }
