@@ -17,7 +17,7 @@ Try to destroy all of the bricks to win the game!
 
 'Esc' for pause
 
-'Mouse' to press buttons
+'Mouse' for pressing buttons
 
 
 
