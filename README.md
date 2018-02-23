@@ -28,7 +28,7 @@ When the ball detroyed a brick, some items might drop down. Try to catch them!
 | Powerup        | Description           | 
 | ------------- |-------------|
 | <img src="https://github.com/ericwalker/3DBreakout/blob/master/3D%20Breakout%202017/readmeImg/powerupClone.png" width="55px"> Clone     | Catch a clone powerup, and finish a game faster.      | 
-| <img src="https://github.com/ericwalker/3DBreakout/blob/master/3D%20Breakout%202017/readmeImg/powerupStrech.png" width="５５px"> Stretch   | The paddle is too small? OK, I'll give you a bigger one.      |
+| <img src="https://github.com/ericwalker/3DBreakout/blob/master/3D%20Breakout%202017/readmeImg/powerupStrech.png" width="55px"> Stretch   | The paddle is too small? OK, I'll give you a bigger one.      |
 | <img src="https://github.com/ericwalker/3DBreakout/blob/master/3D%20Breakout%202017/readmeImg/powerupLive.png" width="55px"> Lives       | Give you one more chance.      |
 | <img src="https://github.com/ericwalker/3DBreakout/blob/master/3D%20Breakout%202017/readmeImg/powerupFire.png" width="55px"> Fire       | The strongest powerup in this game. Burn all of the bricks! |
 
