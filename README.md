@@ -4,14 +4,14 @@
 
 3D Breakout is an arcade game developed using Unity 5. 
 
-Like the other break out game, use your paddle to avoid the ball droping down. 
+Like the other break out game, use your paddle to avoid the ball dropping down. 
 
 Try to destroy all of the bricks to win the game!
 
 
 ## CONTROLS:
 
-"Left" and "Right" Arrow keys for direction
+"Left" and "Right" Arrow keys for moving your paddle left and right
 
 'Space' for start
 
@@ -27,16 +27,17 @@ When the ball detroy a brick, some items may be drop down. Try to catch them!
 
 ### POWERUP
 
-<img src="https://github.com/ericwalker/3DBreakout/blob/master/3D%20Breakout%202017/readmeImg/coinImg.png" width="50px">
-Coin: Catching a coin can give you 100 score!!
+<img src="https://github.com/ericwalker/3DBreakout/blob/master/3D%20Breakout%202017/readmeImg/coinImg.png" width="50px"> Coin: Catching a coin can give you 100 score!!
 
-<img src="https://github.com/ericwalker/3DBreakout/blob/master/3D%20Breakout%202017/readmeImg/powerupClone.png" width="55px">
+<img src="https://github.com/ericwalker/3DBreakout/blob/master/3D%20Breakout%202017/readmeImg/powerupClone.png" width="55px"> Clone: catch a clone powerup, and finish a game faster.
 
-<img src="https://github.com/ericwalker/3DBreakout/blob/master/3D%20Breakout%202017/readmeImg/powerupStrech.png" width="60px">
+<img src="https://github.com/ericwalker/3DBreakout/blob/master/3D%20Breakout%202017/readmeImg/powerupStrech.png" width="60px"> Strech: Thinking that your paddle is too small? It's ok, I'll give you a bigger one.
 
-<img src="https://github.com/ericwalker/3DBreakout/blob/master/3D%20Breakout%202017/readmeImg/powerupLive.png" width="55px">
+<img src="https://github.com/ericwalker/3DBreakout/blob/master/3D%20Breakout%202017/readmeImg/powerupLive.png" width="55px"> Live: Give you one more chance.
 
-<img src="https://github.com/ericwalker/3DBreakout/blob/master/3D%20Breakout%202017/readmeImg/powerupFire.png" width="55px">
+<img src="https://github.com/ericwalker/3DBreakout/blob/master/3D%20Breakout%202017/readmeImg/powerupFire.png" width="55px"> Fire: the strongest powerup in this game. Burn all of the bricks! 
+
+P.S. Be careful, the ball would turn back to normal after 5 seconds. 
 
 ### POWERDOWN
 
