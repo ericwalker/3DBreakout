@@ -23,10 +23,10 @@ Try to destroy all of the bricks to win the game!
 
 
 ## ITEMS
-When the ball detroy a brick, some items may be drop down. Try to catch them!
+When the ball detroyed a brick, some items might drop down. Try to catch them!
 
 | Powerup        | Description           | 
-| ------------- |:-------------|
+| ------------- |-------------|
 | <img src="https://github.com/ericwalker/3DBreakout/blob/master/3D%20Breakout%202017/readmeImg/powerupClone.png" width="55px"> Clone     | Catch a clone powerup, and finish a game faster.      | 
 | <img src="https://github.com/ericwalker/3DBreakout/blob/master/3D%20Breakout%202017/readmeImg/powerupStrech.png" width="60px"> Stretch   | The paddle is too small? OK, I'll give you a bigger one.      |
 | <img src="https://github.com/ericwalker/3DBreakout/blob/master/3D%20Breakout%202017/readmeImg/powerupLive.png" width="55px"> Lives       | Give you one more chance.      |
@@ -35,9 +35,9 @@ When the ball detroy a brick, some items may be drop down. Try to catch them!
     P.S. Be careful, the fireball would turn back to normal after 5 seconds.
 
 | Powerdown        | Description           | 
-| ------------- |:-------------|
+| ------------- |-------------|
 | <img src="https://github.com/ericwalker/3DBreakout/blob/master/3D%20Breakout%202017/readmeImg/powerdownShrink.png" width="50px"> Shrink | Besides of stretch powerup, there is also shrink powerdown for you. |
 
 | Others        | Description           | 
-| ------------- |:-------------|
+| ------------- |-------------|
 | <img src="https://github.com/ericwalker/3DBreakout/blob/master/3D%20Breakout%202017/readmeImg/coinImg.png" width="50px"> Coin     | Catch a coin can give you 100 score!! |
