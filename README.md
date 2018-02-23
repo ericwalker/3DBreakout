@@ -28,6 +28,15 @@ When the ball detroy a brick, some items may be drop down. Try to catch them!
 ### POWERUP
 
 <img src="https://github.com/ericwalker/3DBreakout/blob/master/3D%20Breakout%202017/readmeImg/coinImg.png" width="50px">
+#### Coin 
+
+When you break a brick, you can get 10 score. 
+
+When you break a stone, you can get 30 score. 
+
+However, catching a coin can give you 100 score!!
+
+
 
 <img src="https://github.com/ericwalker/3DBreakout/blob/master/3D%20Breakout%202017/readmeImg/powerupClone.png" width="55px">
 
