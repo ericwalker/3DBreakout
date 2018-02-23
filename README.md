@@ -4,7 +4,7 @@
 
 3D Breakout is an arcade game developed using Unity 5. 
 
-Like the other break out game, use your paddle to avoid the ball dropping down. 
+Use your paddle to avoid the ball dropping down. 
 
 Try to destroy all of the bricks to win the game!
 
