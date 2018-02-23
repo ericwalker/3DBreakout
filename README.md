@@ -9,7 +9,7 @@ Like the other break out game, use your paddle to avoid the ball dropping down.
 Try to destroy all of the bricks to win the game!
 
 
-## CONTROLS:
+## Controls
 
 "Left" and "Right" Arrow keys for moving your paddle left and right
 
@@ -22,7 +22,7 @@ Try to destroy all of the bricks to win the game!
 
 
 
-## ITEMS
+## Items
 When the ball detroyed a brick, some items might drop down. Try to catch them!
 
 | Powerup        | Description           | 
