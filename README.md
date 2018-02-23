@@ -37,8 +37,8 @@ When the ball detroy a brick, some items may be drop down. Try to catch them!
 
 <img src="https://github.com/ericwalker/3DBreakout/blob/master/3D%20Breakout%202017/readmeImg/powerupFire.png" width="55px"> Fire: the strongest powerup in this game. Burn all of the bricks! 
 
-P.S. Be careful, the ball would turn back to normal after 5 seconds. 
+    P.S. Be careful, the fireball would turn back to normal after 5 seconds. 
 
 ### POWERDOWN
 
-<img src="https://github.com/ericwalker/3DBreakout/blob/master/3D%20Breakout%202017/readmeImg/powerdownShrink.png" width="50px">
+<img src="https://github.com/ericwalker/3DBreakout/blob/master/3D%20Breakout%202017/readmeImg/powerdownShrink.png" width="50px"> Shrink: Besides of strech powerup, there is also shrink powerdown for you.
