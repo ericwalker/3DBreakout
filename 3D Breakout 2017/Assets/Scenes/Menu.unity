@@ -178,12 +178,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 9072045}
---- !u!114 &88761151 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114654550680132268, guid: 71a57c5ac5cda4a4cbe0f592f31d355c,
-    type: 2}
-  m_PrefabInternal: {fileID: 1496203420}
-  m_Script: {fileID: 11500000, guid: 225f995e0506448beaa015d0e954134c, type: 3}
 --- !u!1 &90946065
 GameObject:
   m_ObjectHideFlags: 0
@@ -1568,7 +1562,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 839149469}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
@@ -1913,8 +1907,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83ff2af49f0f044baab212191ab9362f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneFader: {fileID: 88761151}
-  levelSceneName: Scene1
 --- !u!1 &1406855325
 GameObject:
   m_ObjectHideFlags: 0
