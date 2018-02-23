@@ -75,5 +75,5 @@ MonoBehaviour:
   - name: Shrink Paddle
     powerupItem: {fileID: 1129455779827736, guid: 243cb058a0a6e440bae95adb77e3752e,
       type: 2}
-    dropRarity: 20
+    dropRarity: 2000
   dropChance: 40
