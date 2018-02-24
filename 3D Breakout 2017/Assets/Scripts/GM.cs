@@ -25,9 +25,10 @@ public class GM : MonoBehaviour {
 	public GameObject attachedBall = null; // used in Paddle.cs to let the ball go with the paddle while attaching on the paddle
 	public static GM instance = null; // GM.instance.brick_num
 
-
 	private GameObject clonePaddle;
 	private GameObject [] _bricks; // use to untrigger the bricks
+
+	public SceneFader sceneFader;
 
 	void Start(){
 //		lives = 3;
@@ -56,12 +57,12 @@ public class GM : MonoBehaviour {
 //		livesText.text = "Lives: " + lives;
 		// set the default information, including lives score
 
-		if (SceneManager.GetActiveScene ().name == "Scene1") {
+//		if (SceneManager.GetActiveScene ().name == "Scene1") {
 			lives = 3;
 			ball_num = 0;
 //			bricks = 35;
 			ScoreManager.score = 0;
-		}
+//		}
 
 		livesText.text = lives.ToString();
 
@@ -112,15 +113,12 @@ public class GM : MonoBehaviour {
 		//Application.LoadLevel (Application.loadedLevel);
 
 		int sceneIndex = SceneManager.GetActiveScene().buildIndex;
-		if (SceneManager.GetActiveScene ().name == "Scene1") {
+		if (SceneManager.GetActiveScene ().name != "Scene2") {
 			SceneManager.LoadScene (SceneManager.GetActiveScene().buildIndex + 1);
-//			SceneManager.LoadScene ("Scene2");
 		}
 
 		else if (SceneManager.GetActiveScene ().name == "Scene2") {
-			Time.timeScale = 0f;
-			youWin.SetActive(false);
-			thanks.SetActive(true);
+			sceneFader.FadeTo ("Menu");
 		}
 		//Application.LoadLevel ("Scene1");
 	}

@@ -121,6 +121,12 @@ GameObject:
   m_PrefabParentObject: {fileID: 1455144712067960, guid: 4693a922c4305411e83895abfaee8f64,
     type: 2}
   m_PrefabInternal: {fileID: 608264937}
+--- !u!114 &276824832 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114654550680132268, guid: 71a57c5ac5cda4a4cbe0f592f31d355c,
+    type: 2}
+  m_PrefabInternal: {fileID: 1323502163}
+  m_Script: {fileID: 11500000, guid: 225f995e0506448beaa015d0e954134c, type: 3}
 --- !u!1 &279045082 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1019526128145150, guid: 4693a922c4305411e83895abfaee8f64,
@@ -883,7 +889,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ball_num: 0
-  bricks: 21
+  bricks: 2
   resetDeley: 1
   livesText: {fileID: 608264938}
   gameOver: {fileID: 1021786624}
@@ -900,6 +906,7 @@ MonoBehaviour:
   ballParticles: {fileID: 1308064679179768, guid: bfc7fc37d61e74dd4866f3abc6f3b6e5,
     type: 2}
   attachedBall: {fileID: 0}
+  sceneFader: {fileID: 276824832}
 --- !u!4 &1956663643
 Transform:
   m_ObjectHideFlags: 0
