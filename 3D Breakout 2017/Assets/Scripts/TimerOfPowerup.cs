@@ -10,17 +10,17 @@ public class TimerOfPowerup : MonoBehaviour {
 		BarOfTimer = this.GetComponent<Image>();
 	}
 
-	public void SetBarOfPowerup(float time)
+	public void SetBarOfTimer(float time)
 	{
 		if (time >= 0.01) {
-			GetComponent<ShowIcon> ().ShowFireIcon ();
+			GetComponent<IconManager> ().ShowIcon ();
 			BarOfTimer.enabled = true;
 			time -= Time.deltaTime;
 			BarOfTimer.transform.localScale = new Vector3 (time / timeAmt, BarOfTimer.transform.localScale.y, BarOfTimer.transform.localScale.z); 
 		} 
 		else if (time < 0.01)
 		{
-			GetComponent<ShowIcon> ().HideFireIcon ();
+			GetComponent<IconManager> ().HideIcon ();
 			BarOfTimer.enabled = false;	
 		}
 	}

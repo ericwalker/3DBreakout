@@ -6,8 +6,9 @@ public class Paddle : MonoBehaviour {
 	public float paddleSpeed = 1f;
 	public float xBoundary = 7.5f; // boundary to restrict the move of the paddle
 
-	private Vector3 playerPos = new Vector3 (0, 0, 0);
+	public Vector3 playerPos = new Vector3 (0, 0, 0);
 	private Touch touch;
+	public int paddleDirection = 1; // if got the powerdownReverse, paddleDirection = -1.
 
 	void Update () 
 	{
@@ -18,7 +19,7 @@ public class Paddle : MonoBehaviour {
 			ballRigidbody.transform.parent = this.transform;
 		}
 
-		float xPos = transform.position.x + (Input.GetAxis("Horizontal") * paddleSpeed);
+		float xPos = transform.position.x + (paddleDirection * Input.GetAxis("Horizontal") * paddleSpeed);
 
 		if (Input.touchCount > 0) {
 			touch = Input.GetTouch (0);
@@ -26,9 +27,7 @@ public class Paddle : MonoBehaviour {
 			Debug.Log ("screen width: " + Screen.width);
 			Debug.Log ("touch position: " + touch.position.x);
 		}
-		//float y =  -4.5f + 10 *touch.position.y / Screen.height;
-		//transform.position = new Vector3 (x,0,0);
-
+			
 		playerPos = new Vector3 (Mathf.Clamp (xPos, -xBoundary, xBoundary), 0.0f, 0f);
 //		playerPos = new Vector3 (xPos, 0.0f, 0f);
 		transform.position = playerPos;

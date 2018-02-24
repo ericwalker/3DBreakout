@@ -28,10 +28,10 @@ public class DropMotion: MonoBehaviour {
 			if (gameObject.name == "PowerupFire(Clone)") {
 
 				// countdown of the powerUp
-				GameObject CounDownText = GameObject.Find("CountDownText");
-				CountDown CountDownScript = CounDownText.GetComponent<CountDown> ();
-				CountDownScript.timeLeft = 5.0f;
-				CountDownScript.count = true;
+				GameObject FireballCountdownText = GameObject.Find("FireballCountdownText");
+				CountDown FireballCountdownScript = FireballCountdownText.GetComponent<CountDown> ();
+				FireballCountdownScript.FireballCountdownTimeLeft = 5.0f;
+				FireballCountdownScript.FireballCountdown = true;
 
 				for (int i = 0; i < GM.instance.cloneBallList.Count; i++) {
 					_ball = GM.instance.cloneBallList[i];
@@ -56,13 +56,20 @@ public class DropMotion: MonoBehaviour {
 			}
 
 			if (gameObject.name == "PowerdownShrink(Clone)") {
-//				GM.instance.DestroyBall();
 				if (_paddle.transform.localScale.x > 2) { // < 2 times
 					_paddle.transform.localScale = new Vector3 (_paddle.transform.localScale.x - 1, 1, 1); // shrink the paddle
 					_paddle.GetComponent<Paddle> ().xBoundary += 0.5f; // change the xBoundary because streching the paddle
 				} else {  // 3 times
 					GM.instance.LoseLife ();
 				}
+			}
+
+			if (gameObject.name == "PowerdownReverse(Clone)") {
+				_paddle.GetComponent<Paddle> ().paddleDirection = -1;
+				GameObject ReverseCoundownText = GameObject.Find("ReverseCountdownText");
+				CountDown ReverseCountdownScript = ReverseCoundownText.GetComponent<CountDown> ();
+				ReverseCountdownScript.ReverseCountdownTimeLeft = 5.0f;
+				ReverseCountdownScript.ReverseCountdown = true;
 			}
 
 			if (gameObject.name == "PowerupClone(Clone)") {

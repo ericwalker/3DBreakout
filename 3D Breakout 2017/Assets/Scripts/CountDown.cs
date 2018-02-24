@@ -6,54 +6,60 @@ using UnityEngine.UI;
 public class CountDown : MonoBehaviour {
 
 
-	Text countDownText;
-	public float timeLeft = 5.0f;
-	public bool count = false;
+	Text FireballCountdownText, ReverseCountdownText;
+	public float FireballCountdownTimeLeft = 5.0f;
+	public float ReverseCountdownTimeLeft = 5.0f;
+	public bool FireballCountdown = false;
+	public bool ReverseCountdown = false;
 
 
 	void Awake () {
 		
-		countDownText = GetComponent<Text>();
+		FireballCountdownText = GetComponent<Text>();
+		ReverseCountdownText = GetComponent<Text> ();
 
 	}
 
 	void Update(){
-		if (count == true){
+		if (FireballCountdown == true){
 //			Debug.Log ("count = true");
-			countDownStart ();
-			
+			FireballCountdownStart ();
+		}
+		if (ReverseCountdown == true){
+			//			Debug.Log ("count = true");
+			ReverseCountdownStart ();
 		}
 	}
 		
-	public void countDownStart () {
+	public void FireballCountdownStart () {
 
 		GetComponent<Text> ().enabled = true;
 
 		// set the bar of powerup
-		GameObject BarOfTimer = GameObject.Find("BarOfTimer");
-		TimerOfPowerup BarOfTimerScript = BarOfTimer.GetComponent<TimerOfPowerup>();
-		BarOfTimerScript.SetBarOfPowerup (timeLeft);
+		GameObject BarOfTimerFire = GameObject.Find("BarOfTimerFire");
+		TimerOfPowerup BarOfTimerFireScript = BarOfTimerFire.GetComponent<TimerOfPowerup>();
+		BarOfTimerFireScript.SetBarOfTimer (FireballCountdownTimeLeft);
 
-		timeLeft -= Time.deltaTime;
-		countDownText.text = "Time Left: " + Mathf.Round(timeLeft);
+		FireballCountdownTimeLeft -= Time.deltaTime;
+		FireballCountdownText.text = "Time Left: " + Mathf.Round(FireballCountdownTimeLeft);
 
 		//	if drop the ball while powerup is working
-		if (timeLeft < -1) {
-			count = false;
+		if (FireballCountdownTimeLeft < -1) {
+			FireballCountdown = false;
 			GetComponent<Text> ().enabled = false;
 
 			// hide the bar of powerup
-			BarOfTimerScript.SetBarOfPowerup (0.0f);
+			BarOfTimerFireScript.SetBarOfTimer (0.0f);
 
 		}
 
 		// else if the powerup time is up
-		else if(timeLeft < 0)
+		else if(FireballCountdownTimeLeft < 0)
 		{
 			// hide the bar of powerup
-			BarOfTimerScript.SetBarOfPowerup (0.0f);
+			BarOfTimerFireScript.SetBarOfTimer (0.0f);
 
-			count = false;
+			FireballCountdown = false;
 			GetComponent<Text> ().enabled = false;
 
 			// the powerUp time is over, so turn the ball back to normal
@@ -66,6 +72,46 @@ public class CountDown : MonoBehaviour {
 				_ball.GetComponent<ChangeMaterial> ().FireBall ();
 				_ball.GetComponent<ChangeMaterial> ().BrickSetNotTrigger ();
 			}
+		}
+
+
+	}
+
+	public void ReverseCountdownStart () {
+
+		GetComponent<Text> ().enabled = true;
+
+		// set the bar of powerup
+		GameObject BarOfTimerReverse = GameObject.Find("BarOfTimerReverse");
+		TimerOfPowerup BarOfTimerReverseScript = BarOfTimerReverse.GetComponent<TimerOfPowerup>();
+		BarOfTimerReverseScript.SetBarOfTimer (ReverseCountdownTimeLeft);
+
+		ReverseCountdownTimeLeft -= Time.deltaTime;
+		ReverseCountdownText.text = "Time Left: " + Mathf.Round(ReverseCountdownTimeLeft);
+
+		//	if drop the ball while powerup is working
+		if (ReverseCountdownTimeLeft < -1) {
+			Debug.Log ("Die!");
+			ReverseCountdown = false;
+			GetComponent<Text> ().enabled = false;
+
+			// hide the bar of powerup
+			BarOfTimerReverseScript.SetBarOfTimer (0.0f);
+		}
+
+		// else if the powerup time is up
+		else if(ReverseCountdownTimeLeft < 0)
+		{
+			// hide the bar of powerup
+			BarOfTimerReverseScript.SetBarOfTimer (0.0f);
+
+			ReverseCountdown = false;
+			GetComponent<Text> ().enabled = false;
+
+			GameObject _paddle;
+
+			_paddle = GM.instance.clonePaddle;
+			_paddle.GetComponent<Paddle> ().paddleDirection = 1;
 		}
 
 

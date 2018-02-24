@@ -25,7 +25,7 @@ public class GM : MonoBehaviour {
 	public GameObject attachedBall = null; // used in Paddle.cs to let the ball go with the paddle while attaching on the paddle
 	public static GM instance = null; // GM.instance.brick_num
 
-	private GameObject clonePaddle;
+	public GameObject clonePaddle;
 	private GameObject [] _bricks; // use to untrigger the bricks
 
 	public SceneFader sceneFader;
@@ -123,12 +123,15 @@ public class GM : MonoBehaviour {
 
 	public void LoseLife()
 	{
-		GameObject CounDownText = GameObject.Find("CountDownText");
-		CountDown CountDownScript = CounDownText.GetComponent<CountDown> ();
+		GameObject CoundownText = GameObject.Find("FireballCountdownText");
+		CountDown FireballCountdownScript = CoundownText.GetComponent<CountDown> ();
+		GameObject ReverseCoundownText = GameObject.Find("ReverseCountdownText");
+		CountDown ReverseCountdownScript = ReverseCoundownText.GetComponent<CountDown> ();
 //		CountDownScript.count = false;
 
 		// finish the powerUp 
-		CountDownScript.timeLeft = -2f;
+		FireballCountdownScript.FireballCountdownTimeLeft = -2f;
+		ReverseCountdownScript.ReverseCountdownTimeLeft = -2f;
 
 		lives--;
 		livesText.text = lives.ToString();
