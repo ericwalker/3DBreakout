@@ -889,7 +889,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ball_num: 0
-  bricks: 2
+  bricks: 21
   resetDeley: 1
   livesText: {fileID: 608264938}
   gameOver: {fileID: 1021786624}

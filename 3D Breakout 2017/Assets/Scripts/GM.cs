@@ -110,7 +110,6 @@ public class GM : MonoBehaviour {
 
 	void NextLevel(){
 		Time.timeScale = 1f;
-		//Application.LoadLevel (Application.loadedLevel);
 
 		int sceneIndex = SceneManager.GetActiveScene().buildIndex;
 		if (SceneManager.GetActiveScene ().name != "Scene2") {
@@ -120,7 +119,6 @@ public class GM : MonoBehaviour {
 		else if (SceneManager.GetActiveScene ().name == "Scene2") {
 			sceneFader.FadeTo ("Menu");
 		}
-		//Application.LoadLevel ("Scene1");
 	}
 
 	public void LoseLife()

@@ -34,11 +34,7 @@ public class DropMotion: MonoBehaviour {
 				CountDownScript.count = true;
 
 				for (int i = 0; i < GM.instance.cloneBallList.Count; i++) {
-//					_ball = GameObject.Find ("Ball(Clone)");
 					_ball = GM.instance.cloneBallList[i];
-//				// change the trail material
-//				_ball.GetComponent<TrailRenderer>().enabled = false;
-//				_ball.transform.Find ("FireBallTrail").GetComponent<TrailRenderer> ().enabled = true;
 
 					_ball.GetComponent<Ball> ().isFireBall = true;
 					_ball.GetComponent<ChangeMaterial> ().FireBall ();

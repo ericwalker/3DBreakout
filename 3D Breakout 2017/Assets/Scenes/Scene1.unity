@@ -159,6 +159,7 @@ MonoBehaviour:
   ballParticles: {fileID: 1308064679179768, guid: bfc7fc37d61e74dd4866f3abc6f3b6e5,
     type: 2}
   attachedBall: {fileID: 0}
+  sceneFader: {fileID: 0}
 --- !u!4 &50389943
 Transform:
   m_ObjectHideFlags: 0

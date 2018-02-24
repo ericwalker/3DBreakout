@@ -10,6 +10,7 @@ public class CountDown : MonoBehaviour {
 	public float timeLeft = 5.0f;
 	public bool count = false;
 
+
 	void Awake () {
 		
 		countDownText = GetComponent<Text>();
@@ -23,9 +24,7 @@ public class CountDown : MonoBehaviour {
 			
 		}
 	}
-
-
-	// Update is called once per frame;
+		
 	public void countDownStart () {
 
 		GetComponent<Text> ().enabled = true;
@@ -35,17 +34,11 @@ public class CountDown : MonoBehaviour {
 		TimerOfPowerup BarOfTimerScript = BarOfTimer.GetComponent<TimerOfPowerup>();
 		BarOfTimerScript.SetBarOfPowerup (timeLeft);
 
-
-
 		timeLeft -= Time.deltaTime;
 		countDownText.text = "Time Left: " + Mathf.Round(timeLeft);
 
-
-
-		//	lose life while fireball is working
+		//	if drop the ball while powerup is working
 		if (timeLeft < -1) {
-
-//			BarOfTimerScript.SetBarOfPowerup (timeLeft);
 			count = false;
 			GetComponent<Text> ().enabled = false;
 
@@ -54,10 +47,12 @@ public class CountDown : MonoBehaviour {
 
 		}
 
-		// the powerUp time is up
+		// else if the powerup time is up
 		else if(timeLeft < 0)
 		{
-//			BarOfTimerScript.SetBarOfPowerup (timeLeft);
+			// hide the bar of powerup
+			BarOfTimerScript.SetBarOfPowerup (0.0f);
+
 			count = false;
 			GetComponent<Text> ().enabled = false;
 
