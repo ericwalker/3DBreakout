@@ -37,7 +37,7 @@ When the ball detroyed a brick, some items might drop down. Try to catch them!
 | Powerdown        | Description           | 
 | ------------- |-------------|
 | <img src="https://github.com/ericwalker/3DBreakout/blob/master/3D%20Breakout%202017/readmeImg/powerdownShrink.png" width="50px"> Shrink | Besides of stretch powerup, there is also shrink powerdown for you. |
-| <img src="https://github.com/ericwalker/3DBreakout/blob/master/3D%20Breakout%202017/readmeImg/powerdownReverse.png" width="50px"> Reverse | It would reverse your paddle movement direction. But don't worry. It only stand for 5 seconds. |
+| <img src="https://github.com/ericwalker/3DBreakout/blob/master/3D%20Breakout%202017/readmeImg/powerdownReverse.png" width="55px"> Reverse | It would reverse your paddle movement direction. But don't worry. It only stand for 5 seconds. |
 
 
 | Others        | Description           | 
