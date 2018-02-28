@@ -563,7 +563,7 @@ Prefab:
     - target: {fileID: 224289620959655954, guid: d482fa62d5b6b47929c5b6e458f8d913,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -590
+      value: -217
       objectReference: {fileID: 0}
     - target: {fileID: 224289620959655954, guid: d482fa62d5b6b47929c5b6e458f8d913,
         type: 2}
@@ -725,8 +725,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.0000019073, y: 525}
-  m_SizeDelta: {x: -312.2, y: -1299.3}
+  m_AnchoredPosition: {x: -11, y: 182}
+  m_SizeDelta: {x: -156.1, y: -1005.65}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &975386792
 MonoBehaviour:
@@ -793,7 +793,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: -1
+  m_firstOverflowCharacterIndex: 0
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_enableKerning: 1
@@ -812,7 +812,7 @@ MonoBehaviour:
   m_firstVisibleCharacter: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -1.1386276, w: 0}
+  m_margin: {x: 0, y: -306.5345, z: -1.1386276, w: 0}
   m_textInfo:
     textComponent: {fileID: 975386792}
     characterCount: 12
@@ -880,8 +880,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -87}
-  m_SizeDelta: {x: 629.6, y: 876.8}
+  m_AnchoredPosition: {x: 0, y: -37}
+  m_SizeDelta: {x: 680, y: 309.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1011749173
 MonoBehaviour:
