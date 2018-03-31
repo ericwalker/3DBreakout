@@ -247,6 +247,54 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Pause_Buttun
       objectReference: {fileID: 0}
+    - target: {fileID: 114002413774731362, guid: 4693a922c4305411e83895abfaee8f64,
+        type: 2}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 02b8041c6ddcee3428810c7e7a438e0e,
+        type: 3}
+    - target: {fileID: 114364057746912390, guid: 4693a922c4305411e83895abfaee8f64,
+        type: 2}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 02b8041c6ddcee3428810c7e7a438e0e,
+        type: 3}
+    - target: {fileID: 114787799293639110, guid: 4693a922c4305411e83895abfaee8f64,
+        type: 2}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 02b8041c6ddcee3428810c7e7a438e0e,
+        type: 3}
+    - target: {fileID: 114672921254910598, guid: 4693a922c4305411e83895abfaee8f64,
+        type: 2}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 02b8041c6ddcee3428810c7e7a438e0e,
+        type: 3}
+    - target: {fileID: 114415428018773130, guid: 4693a922c4305411e83895abfaee8f64,
+        type: 2}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 02b8041c6ddcee3428810c7e7a438e0e,
+        type: 3}
+    - target: {fileID: 114914653636698036, guid: 4693a922c4305411e83895abfaee8f64,
+        type: 2}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 02b8041c6ddcee3428810c7e7a438e0e,
+        type: 3}
+    - target: {fileID: 114316743339403006, guid: 4693a922c4305411e83895abfaee8f64,
+        type: 2}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 02b8041c6ddcee3428810c7e7a438e0e,
+        type: 3}
+    - target: {fileID: 114535837695016388, guid: 4693a922c4305411e83895abfaee8f64,
+        type: 2}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 02b8041c6ddcee3428810c7e7a438e0e,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4693a922c4305411e83895abfaee8f64, type: 2}
   m_IsPrefabParent: 0
